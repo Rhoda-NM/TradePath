@@ -1,0 +1,242 @@
+[
+  {
+    "code": "p1-w1",
+    "phase_number": 1,
+    "week_number": 1,
+    "title": "Your written practice plan",
+    "instructions": "Write a demo-only plan covering your available time, EUR/USD, the H4/H1 experimental rules, risk limits, and when you will deliberately sit out.",
+    "evidence_kind": "plan",
+    "required_count": 1,
+    "sort_order": 1
+  },
+  {
+    "code": "p1-w2",
+    "phase_number": 1,
+    "week_number": 2,
+    "title": "Pips, costs and position sizing",
+    "instructions": "Work through ten distinct hypothetical EUR/USD position sizes. Include spread, commission, lot increment and broker minimums. A size below the minimum means skip; never round up.",
+    "evidence_kind": "risk",
+    "required_count": 10,
+    "sort_order": 2
+  },
+  {
+    "code": "p1-w3",
+    "phase_number": 1,
+    "week_number": 3,
+    "title": "Confirmed H4 structure",
+    "instructions": "Annotate ten historical charts. Identify swing highs and lows with two closed candles on each side. Describe when confirmation became available; avoid look-ahead assumptions.",
+    "evidence_kind": "chart",
+    "required_count": 10,
+    "sort_order": 3
+  },
+  {
+    "code": "p1-w4",
+    "phase_number": 1,
+    "week_number": 4,
+    "title": "H4 zones and closed H1 candles",
+    "instructions": "Annotate ten more charts. Describe the pre-existing H4 zone, the closed H1 candle and a reason to accept further study or skip. These are learning annotations, not eligibility evaluations.",
+    "evidence_kind": "chart",
+    "required_count": 10,
+    "sort_order": 4
+  },
+  {
+    "code": "p2-w1",
+    "phase_number": 2,
+    "week_number": 1,
+    "title": "Sequential sampling",
+    "instructions": "Document how you will select consecutive historical candidates without cherry-picking wins. Separate development and untouched held-out data.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 5
+  },
+  {
+    "code": "p2-w2",
+    "phase_number": 2,
+    "week_number": 2,
+    "title": "Development log",
+    "instructions": "Reflect on the first 35 candidates and how spread, commission, timestamps and excluded news windows will be documented. Candidate validation belongs to the setup journal.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 6
+  },
+  {
+    "code": "p2-w3",
+    "phase_number": 2,
+    "week_number": 3,
+    "title": "Freeze before held-out testing",
+    "instructions": "Document the exact strategy version to freeze after 70 development samples. Explain why the 30 held-out candidates must remain untouched until then.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 7
+  },
+  {
+    "code": "p2-w4",
+    "phase_number": 2,
+    "week_number": 4,
+    "title": "Review all outcomes",
+    "instructions": "Describe what after-cost average R can and cannot tell you from a small sample. Preserve losing and rejected candidates. Validated dataset counts are required separately.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 8
+  },
+  {
+    "code": "p3-w1",
+    "phase_number": 3,
+    "week_number": 1,
+    "title": "A calm check-in",
+    "instructions": "Reflect on your emotional state and why fatigue or pressure defaults to study-only. There is no requirement to place a trade.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 9
+  },
+  {
+    "code": "p3-w2",
+    "phase_number": 3,
+    "week_number": 2,
+    "title": "Wait for closed evidence",
+    "instructions": "Explain what you must document before an H1 confirmation can be evaluated, including the pre-existing H4 zone and manual news check.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 10
+  },
+  {
+    "code": "p3-w3",
+    "phase_number": 3,
+    "week_number": 3,
+    "title": "Record the honest outcome",
+    "instructions": "Describe how you will keep valid no-trade decisions separate from executions and retain rule breaches even when an execution wins.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 11
+  },
+  {
+    "code": "p3-w4",
+    "phase_number": 3,
+    "week_number": 4,
+    "title": "Review the week",
+    "instructions": "Review what helped your process and one change for next week. Forward-trade milestones will use validated journal records, not this reflection.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 12
+  },
+  {
+    "code": "p4-w1",
+    "phase_number": 4,
+    "week_number": 1,
+    "title": "Compare like with like",
+    "instructions": "Explain how you will compare development, held-out and forward demo results without pooling them.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 13
+  },
+  {
+    "code": "p4-w2",
+    "phase_number": 4,
+    "week_number": 2,
+    "title": "Recurring mistakes",
+    "instructions": "Reflect on recurring process mistakes. Distinguish poor outcomes under the rules from profitable rule breaches.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 14
+  },
+  {
+    "code": "p4-w3",
+    "phase_number": 4,
+    "week_number": 3,
+    "title": "Drawdown needs equity records",
+    "instructions": "Describe why maximum drawdown needs chronological account equity records and cash-flow context. Missing equity history remains unavailable.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 15
+  },
+  {
+    "code": "p4-w4",
+    "phase_number": 4,
+    "week_number": 4,
+    "title": "Evidence before confidence",
+    "instructions": "Review sample size, losses, costs and adherence. Reflection alone does not establish readiness or profitability.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 16
+  },
+  {
+    "code": "p5-w1",
+    "phase_number": 5,
+    "week_number": 1,
+    "title": "Read the programme rules",
+    "instructions": "Document the provider rules you intend to verify: daily and total loss, equity treatment, reset timezone and the rule-set timestamp.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 17
+  },
+  {
+    "code": "p5-w2",
+    "phase_number": 5,
+    "week_number": 2,
+    "title": "Keep simulations free",
+    "instructions": "Explain how you will document a free evaluation. If a chosen provider has no free trial, postpone rather than substituting a paid evaluation.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 18
+  },
+  {
+    "code": "p5-w3",
+    "phase_number": 5,
+    "week_number": 3,
+    "title": "Reset-time practice",
+    "instructions": "Describe how an external trial calculates its daily reset and open exposure. Automated simulation support is a later release.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 19
+  },
+  {
+    "code": "p5-w4",
+    "phase_number": 5,
+    "week_number": 4,
+    "title": "Review trial evidence",
+    "instructions": "Reflect on externally documented results and any rule breaches. Two verified free evaluations require their own evidence; notes do not pass that gate.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 20
+  },
+  {
+    "code": "p6-w1",
+    "phase_number": 6,
+    "week_number": 1,
+    "title": "Audit the full record",
+    "instructions": "Review historical and forward evidence, including losing periods, missing records and divergence between samples.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 21
+  },
+  {
+    "code": "p6-w2",
+    "phase_number": 6,
+    "week_number": 2,
+    "title": "Affordability and eligibility",
+    "instructions": "Document what fee affordability, identity eligibility and current payout terms would require you to verify independently.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 22
+  },
+  {
+    "code": "p6-w3",
+    "phase_number": 6,
+    "week_number": 3,
+    "title": "An unpressured decision",
+    "instructions": "Write your reasons for postponing, declining or independently reviewing a possible evaluation. No purchase is required.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 23
+  },
+  {
+    "code": "p6-w4",
+    "phase_number": 6,
+    "week_number": 4,
+    "title": "Keep the learning routine",
+    "instructions": "Write a sustainable process for the next month, regardless of the evaluation decision. This curriculum never enables real-money orders.",
+    "evidence_kind": "reflection",
+    "required_count": 1,
+    "sort_order": 24
+  }
+]
