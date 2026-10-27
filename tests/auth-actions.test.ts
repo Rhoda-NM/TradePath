@@ -70,9 +70,25 @@ describe("magic-link actions", () => {
     });
     expect(
       (await requestMagicLink({ email: "learner@example.com" })).error,
-    ).toBeTruthy();
+    ).toContain("APP_URL");
     expect(mocks.signInWithOtp).not.toHaveBeenCalled();
+    expect(mocks.serverClient).not.toHaveBeenCalled();
   });
+  it.each([
+    ["over_email_send_rate_limit", "sending limit"],
+    ["email_address_not_authorized", "custom SMTP"],
+    ["email_provider_disabled", "disabled"],
+  ])(
+    "explains %s without leaking provider diagnostics",
+    async (code, expected) => {
+      mocks.signInWithOtp.mockResolvedValue({
+        error: { code, message: "private diagnostic" },
+      });
+      const result = await requestMagicLink({ email: "learner@example.com" });
+      expect(result.error).toContain(expected);
+      expect(result.error).not.toContain("private diagnostic");
+    },
+  );
   it("signs out only this device and reports failures", async () => {
     expect((await signOut()).success).toBe(true);
     expect(mocks.signOut).toHaveBeenCalledWith({ scope: "local" });
