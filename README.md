@@ -34,3 +34,7 @@ Phase 3 setup evaluation, trade journaling, private screenshots and the live tes
 No service-role secret belongs in browser configuration. The Supabase public URL and publishable/anon key support ordinary account practice. Account deletion additionally requires a server-only secret/admin key and a protected retry worker.
 
 Deployment scope: prepared for deployment only. No deployment or credential transfer is authorized under the current instruction. Choose the intended hosting account/project when deployment is requested.
+
+## In-app walkthrough
+
+Open `/guide` for the public, step-by-step app guide. It is linked from sign-in, the workspace header/sidebar, and Settings. It covers daily practice, curriculum evidence, setup evaluation, executions, screenshots, historical testing, weekly reviews, Insights, equity, readiness, exports, installation and account deletion.

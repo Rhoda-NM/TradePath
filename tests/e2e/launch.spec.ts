@@ -95,3 +95,37 @@ test("device preview settings fits mobile and explains installation", async ({
     ),
   ).toBe(true);
 });
+
+test("walkthrough is public, navigable and accessible on mobile and desktop", async ({
+  page,
+}) => {
+  await page.goto("/guide");
+  await expect(
+    page.getByRole("heading", { name: "How to use TradePath", exact: true }),
+  ).toBeVisible();
+  await page
+    .getByRole("navigation", { name: "Walkthrough topics" })
+    .getByRole("link", { name: "Track equity and readiness" })
+    .click();
+  await expect(page).toHaveURL(/\/guide#equity$/);
+  await expect(
+    page.getByRole("link", { name: "Open readiness →" }),
+  ).toHaveAttribute("href", "/funding");
+  for (const width of [360, 1280]) {
+    await page.setViewportSize({ width, height: 800 });
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= window.innerWidth,
+      ),
+    ).toBe(true);
+    const results = await new AxeBuilder({ page })
+      .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+      .analyze();
+    expect(results.violations).toEqual([]);
+  }
+  await page.goto("/welcome");
+  await page
+    .getByRole("link", { name: "New here? Read the walkthrough →" })
+    .click();
+  await expect(page).toHaveURL(/\/guide$/);
+});

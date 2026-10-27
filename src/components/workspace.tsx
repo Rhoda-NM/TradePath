@@ -473,6 +473,10 @@ export default function Workspace({
             </Link>
           ))}
         </nav>
+        <Link href="/guide" className="nav-link">
+          <BookOpen size={19} />
+          Guide &amp; walkthrough
+        </Link>
         <div className="sidebar-bottom">
           <div className="demo-card">
             <ShieldCheck size={23} />
@@ -502,6 +506,9 @@ export default function Workspace({
             Workspace <ChevronRight size={13} /> <strong>{title}</strong>
           </div>
           <div className="top-meta">
+            <Link href="/guide" className="workspace-guide-link">
+              Guide
+            </Link>
             <span className="demo-pill">
               <span /> Demo mode
             </span>
@@ -1059,6 +1066,9 @@ export default function Workspace({
           )}
           {current === "settings" && (
             <section className="panel settings-panel">
+              <Link href="/guide" className="button secondary">
+                Read the app walkthrough →
+              </Link>
               <InstallGuide />
               <h2>Practice preferences</h2>
               <div className="setting-row">

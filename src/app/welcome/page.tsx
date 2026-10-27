@@ -49,6 +49,9 @@ export default async function Welcome({
             existing device workspace is available below.
           </div>
         )}
+        <Link href="/guide" className="text-link dark-link">
+          New here? Read the walkthrough →
+        </Link>
         <Link href="/preview/today" className="text-link dark-link">
           Open device-only practice →
         </Link>
