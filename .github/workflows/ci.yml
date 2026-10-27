@@ -1,0 +1,23 @@
+name: Verify
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: sudo apt-get update && sudo apt-get install -y postgresql-16
+      - name: Test PostgreSQL isolation
+        run: npm run test:database
+        env:
+          TRADEPATH_PG_BIN: /usr/lib/postgresql/16/bin
+      - run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
